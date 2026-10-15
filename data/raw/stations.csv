@@ -1,0 +1,31 @@
+Station_ID,Station_Name,Region,Location_City,Latitude,Longitude,Station_Type,Installation_Date,Total_Capacity_kW
+ST001,Kolkata EV Charging Hub,East,Kolkata,14.179572,83.750407,Commercial,2021-12-21,150
+ST002,Howrah EV Charging Hub,,Howrah,8.0996,87.301776,Highway,2020-01-21,120
+ST003,Durgapur EV Charging Hub,East,Durgapur,27.467083,87.953967,Urban,2019-09-12,720
+ST004,Siliguri EV Charging Hub,North,Siliguri,20.828622,90.105815,Transit,2022-09-04,300
+ST005,   ,East,Bhubaneswar,22.590707,76.697899,Urban,2022-08-26,600
+ST006,Ranchi EV Charging Hub,Central,Ranchi,25.578461,72.820089,Commercial,2020-11-29,0
+ST007,Patna EV Charging Hub,North,Patna,8.788384,89.307291,Urban,2019-10-26,720
+ST008,Guwahati EV Charging Hub,North-East,Guwahati,13.842294,83.343128,Highway,2023-02-01,720
+ST009,Delhi EV Charging Hub,North,Delhi,22.775324,89.551963,Highway,2019-01-07,300
+ST010,Jaipur EV Charging Hub,West,Jaipur,15.627382,86.018339,Highway,2019-10-10,180
+ST011,Lucknow EV Charging Hub,North,Lucknow,19.484255,77.322928,Transit ,2019-07-21,720
+ST012,Pune EV Charging Hub,West,Pune,-999.999,80.583134,Commercial,2024-01-15,600
+ST013,Mumbai EV Charging Hub,   ,Mumbai,16.151743,74.188722,Highway,2020-01-03,600
+ST014,Hyderabad EV Charging Hub,South,Hyderabad,29.579386,82.778514,Commercial,2024-03-04,240
+ST015,Bengaluru EV Charging Hub,South,Bengaluru,27.544626,72.224414,Commercial,2019-02-16,600
+ST016,Chennai EV Charging Hub,unknown,Chennai,25.14129,82.090991,Urban,2024-08-06,150
+ST017,Kochi EV Charging Hub,South,Kochi,9.049756,90.714622,Highway,2021-06-25,300
+ST018,Ahmedabad EV Charging Hub,West,Ahmedabad,24.823654,79.167329,HIGHWAY,2020-10-13,120
+ST019,Indore EV Charging Hub,Central,Indore,13.055576,91.414209,Commercial,2020-01-10,-50
+ST020,Nagpur EV Charging Hub,Central,Nagpur,25.997884,90.591613,Highway,2024-03-13,240
+ST021,Surat EV Charging Hub,West,Surat,13.497368,85.956972,Urban,2019-01-07,450
+ST022,Varanasi EV Charging Hub,N/A,Varanasi,29.503823,80.130373,Urban,2022-04-24,150
+ST023,Mysuru EV Charging Hub,South,Mysuru,27.777447,,Transit,2021-08-24,360
+ST024,Visakhapatnam EV Charging Hub,South,Visakhapatnam,19.541678,84.637149,Urban,2021-10-09,9999
+ST025,Bhopal EV Charging Hub,Central,Bhopal,17.9305,73.501614,Urban,2022-05-14,300
+ST026,Thane EV Charging Hub,West,Thane,22.833606,80.250452,Urban,2020-10-23,600
+ST027,Noida EV Charging Hub,North,Noida,12.288474,88.45061,Commercial,2020-12-05,240
+ST028,Coimbatore EV Charging Hub,South,Coimbatore,,999.999, commercial ,2019-05-15,450
+ST029,Amritsar EV Charging Hub,North,Amritsar,22.956368,72.893853,Highway,2023-10-02,300
+ST030,Gaya EV Charging Hub,East,Gaya,999.999,85.742258,urban,2024-08-22,450
