@@ -1,0 +1,209 @@
+dataset,row_index_zero_based,record_key_column,record_key_value,column,defect_type,original_value,injected_value
+stations.csv,1,Station_ID,ST002,Region,missing_or_invalid_category,East,
+stations.csv,15,Station_ID,ST016,Region,missing_or_invalid_category,South,unknown
+stations.csv,21,Station_ID,ST022,Region,missing_or_invalid_category,North,N/A
+stations.csv,12,Station_ID,ST013,Region,missing_or_invalid_category,West,   
+stations.csv,29,Station_ID,ST030,Station_Type,inconsistent_casing_whitespace,Urban,urban
+stations.csv,17,Station_ID,ST018,Station_Type,inconsistent_casing_whitespace,Commercial,HIGHWAY
+stations.csv,27,Station_ID,ST028,Station_Type,inconsistent_casing_whitespace,Highway, commercial 
+stations.csv,10,Station_ID,ST011,Station_Type,inconsistent_casing_whitespace,Highway,Transit 
+stations.csv,27,Station_ID,ST028,Latitude,missing_or_out_of_range,14.4709,
+stations.csv,29,Station_ID,ST030,Latitude,missing_or_out_of_range,22.002423,999.999
+stations.csv,11,Station_ID,ST012,Latitude,missing_or_out_of_range,19.773562,-999.999
+stations.csv,18,Station_ID,ST019,Total_Capacity_kW,invalid_numeric_domain,150,-50
+stations.csv,23,Station_ID,ST024,Total_Capacity_kW,invalid_numeric_domain,150,9999
+stations.csv,5,Station_ID,ST006,Total_Capacity_kW,invalid_numeric_domain,300,0
+stations.csv,4,Station_ID,ST005,Station_Name,whitespace_only,Bhubaneswar EV Charging Hub,   
+chargers.csv,117,Station_ID,ST020,Connector_Type,missing_or_invalid_category,Type 2,
+chargers.csv,87,Station_ID,ST015,Connector_Type,missing_or_invalid_category,Type 2,unknown
+chargers.csv,53,Station_ID,ST009,Connector_Type,missing_or_invalid_category,CHAdeMO, CCS2 
+chargers.csv,133,Station_ID,ST023,Connector_Type,missing_or_invalid_category,CCS2,N/A
+chargers.csv,95,Station_ID,ST016,Connector_Type,missing_or_invalid_category,Bharat DC-001,
+chargers.csv,103,Station_ID,ST018,Status,inconsistent_or_invalid_category,Active,active
+chargers.csv,96,Station_ID,ST017,Status,inconsistent_or_invalid_category,Active,ACTIVE 
+chargers.csv,62,Station_ID,ST011,Status,inconsistent_or_invalid_category,Active,offline
+chargers.csv,146,Station_ID,ST025,Status,inconsistent_or_invalid_category,Under Maintenance,
+chargers.csv,130,Station_ID,ST022,Status,inconsistent_or_invalid_category,Offline,Under maintenance
+chargers.csv,47,Station_ID,ST008,Rated_Power_kW,invalid_numeric_domain,120,-20
+chargers.csv,129,Station_ID,ST022,Rated_Power_kW,invalid_numeric_domain,300,0
+chargers.csv,73,Station_ID,ST013,Rated_Power_kW,invalid_numeric_domain,60,9999
+chargers.csv,68,Station_ID,ST012,Rated_Power_kW,invalid_numeric_domain,50,not_numeric
+chargers.csv,168,Station_ID,ST029,Installation_Date,invalid_or_missing_date,2023-10-31,2025-02-30
+chargers.csv,23,Station_ID,ST004,Installation_Date,invalid_or_missing_date,2022-12-15,not_a_date
+chargers.csv,105,Station_ID,ST018,Installation_Date,invalid_or_missing_date,2020-11-29,
+chargers.csv,101,Station_ID,ST999,Station_ID,orphan_or_malformed_foreign_key,ST017,ST999
+chargers.csv,169,Station_ID,,Station_ID,orphan_or_malformed_foreign_key,ST029,
+chargers.csv,45,Station_ID,st001,Station_ID,orphan_or_malformed_foreign_key,ST008,st001
+charging_sessions.csv,55485,Charger_ID,CH00003,Energy_kWh,missing_invalid_or_outlier_numeric,17.293,
+charging_sessions.csv,78370,Charger_ID,CH00031,Energy_kWh,missing_invalid_or_outlier_numeric,11.2,NA
+charging_sessions.csv,36154,Charger_ID,CH00129,Energy_kWh,missing_invalid_or_outlier_numeric,40.198,-5
+charging_sessions.csv,35370,Charger_ID,CH00013,Energy_kWh,missing_invalid_or_outlier_numeric,3.845,9999
+charging_sessions.csv,65839,Charger_ID,CH00010,Energy_kWh,missing_invalid_or_outlier_numeric,16.479,not_numeric
+charging_sessions.csv,70615,Charger_ID,CH00170,Energy_kWh,missing_invalid_or_outlier_numeric,9.45,
+charging_sessions.csv,63575,Charger_ID,CH00037,Energy_kWh,missing_invalid_or_outlier_numeric,13.833,-1
+charging_sessions.csv,7437,Charger_ID,CH00103,Energy_kWh,missing_invalid_or_outlier_numeric,9.034,99999
+charging_sessions.csv,64395,Charger_ID,CH00139,Energy_kWh,missing_invalid_or_outlier_numeric,8.7, 
+charging_sessions.csv,7562,Charger_ID,CH00009,Revenue,missing_invalid_or_outlier_numeric,659.13,-100
+charging_sessions.csv,45069,Charger_ID,CH00043,Revenue,missing_invalid_or_outlier_numeric,499.56,
+charging_sessions.csv,50963,Charger_ID,CH00108,Revenue,missing_invalid_or_outlier_numeric,208.2,not_numeric
+charging_sessions.csv,38636,Charger_ID,CH00178,Revenue,missing_invalid_or_outlier_numeric,364.22,999999
+charging_sessions.csv,58536,Charger_ID,CH00158,Revenue,missing_invalid_or_outlier_numeric,531.85,-0.01
+charging_sessions.csv,40745,Charger_ID,CH00131,Revenue,missing_invalid_or_outlier_numeric,190.88, 
+charging_sessions.csv,10544,Charger_ID,CH00154,Duration_Min,invalid_duration,18,-1
+charging_sessions.csv,21875,Charger_ID,CH00104,Duration_Min,invalid_duration,53,0
+charging_sessions.csv,476,Charger_ID,CH00113,Duration_Min,invalid_duration,72,
+charging_sessions.csv,78472,Charger_ID,CH00115,Duration_Min,invalid_duration,123,99999
+charging_sessions.csv,4047,Charger_ID,CH00012,Duration_Min,invalid_duration,61,not_numeric
+charging_sessions.csv,10207,Charger_ID,CH00129,Session_Status,inconsistent_or_invalid_category,Completed,completed
+charging_sessions.csv,62029,Charger_ID,CH00160,Session_Status,inconsistent_or_invalid_category,Completed,FAILED 
+charging_sessions.csv,46169,Charger_ID,CH00074,Session_Status,inconsistent_or_invalid_category,Completed,unknown
+charging_sessions.csv,58222,Charger_ID,CH00061,Session_Status,inconsistent_or_invalid_category,Completed,
+charging_sessions.csv,19483,Charger_ID,CH00043,Session_Status,inconsistent_or_invalid_category,Completed,Interrupted 
+charging_sessions.csv,56112,Charger_ID,CH00039,Start_Time,invalid_or_missing_timestamp,2025-01-24 17:42:00,
+charging_sessions.csv,38271,Charger_ID,CH00080,Start_Time,invalid_or_missing_timestamp,2025-01-24 13:02:00,2025-13-40 99:99:99
+charging_sessions.csv,73282,Charger_ID,CH00045,Start_Time,invalid_or_missing_timestamp,2025-08-22 04:38:00,not_a_timestamp
+charging_sessions.csv,34641,Charger_ID,CH00046,Start_Time,invalid_or_missing_timestamp,2025-05-21 18:36:00,2025/02/30
+charging_sessions.csv,44015,Charger_ID,CH00084,End_Time,invalid_or_missing_timestamp,2025-02-18 04:05:00,
+charging_sessions.csv,59050,Charger_ID,CH00145,End_Time,invalid_or_missing_timestamp,2025-04-24 13:03:00,2025-13-40 99:99:99
+charging_sessions.csv,18502,Charger_ID,CH00076,End_Time,invalid_or_missing_timestamp,2025-04-04 04:47:00,not_a_timestamp
+charging_sessions.csv,64569,Charger_ID,CH00007,End_Time,invalid_or_missing_timestamp,2025-05-04 19:56:00,2024-01-01 00:00:00
+charging_sessions.csv,34475,Charger_ID,CH99999,Charger_ID,orphan_or_malformed_foreign_key,CH00065,CH99999
+charging_sessions.csv,60887,Charger_ID,,Charger_ID,orphan_or_malformed_foreign_key,CH00055,
+charging_sessions.csv,3434,Charger_ID,ch00001,Charger_ID,orphan_or_malformed_foreign_key,CH00155,ch00001
+charging_sessions.csv,50843,Charger_ID,CH00002 ,Charger_ID,orphan_or_malformed_foreign_key,CH00096,CH00002 
+charging_sessions.csv,80000,Session_ID,SE0000124,*,exact_duplicate_row,source row index 123,duplicate of source row 123
+charging_sessions.csv,80001,Session_ID,SE0000457,*,exact_duplicate_row,source row index 456,duplicate of source row 456
+charging_sessions.csv,80002,Session_ID,SE0000790,*,exact_duplicate_row,source row index 789,duplicate of source row 789
+charging_sessions.csv,80003,Session_ID,SE0001201,*,exact_duplicate_row,source row index 1200,duplicate of source row 1200
+charging_sessions.csv,80004,Session_ID,SE0002501,*,exact_duplicate_row,source row index 2500,duplicate of source row 2500
+charging_sessions.csv,80005,Session_ID,SE0005001,*,exact_duplicate_row,source row index 5000,duplicate of source row 5000
+charging_sessions.csv,80006,Session_ID,SE0009001,*,exact_duplicate_row,source row index 9000,duplicate of source row 9000
+charging_sessions.csv,80007,Session_ID,SE0012001,*,exact_duplicate_row,source row index 12000,duplicate of source row 12000
+charging_sessions.csv,80008,Session_ID,SE0018001,*,exact_duplicate_row,source row index 18000,duplicate of source row 18000
+charging_sessions.csv,80009,Session_ID,SE0025001,*,exact_duplicate_row,source row index 25000,duplicate of source row 25000
+energy_tariffs.csv,432,Station_ID,ST019,Rate_Per_kWh,missing_invalid_or_outlier_rate,8.38,
+energy_tariffs.csv,485,Station_ID,ST021,Rate_Per_kWh,missing_invalid_or_outlier_rate,5.3,-2.5
+energy_tariffs.csv,623,Station_ID,ST026,Rate_Per_kWh,missing_invalid_or_outlier_rate,5.76,not_numeric
+energy_tariffs.csv,632,Station_ID,ST027,Rate_Per_kWh,missing_invalid_or_outlier_rate,9.5,99999
+energy_tariffs.csv,573,Station_ID,ST024,Rate_Per_kWh,missing_invalid_or_outlier_rate,5.56,-0.1
+energy_tariffs.csv,703,Station_ID,ST030,Time_Band,invalid_or_inconsistent_time_band,Off-Peak,peak
+energy_tariffs.csv,417,Station_ID,ST018,Time_Band,invalid_or_inconsistent_time_band,Off-Peak,OFFPEAK
+energy_tariffs.csv,42,Station_ID,ST002,Time_Band,invalid_or_inconsistent_time_band,Peak,overnight
+energy_tariffs.csv,390,Station_ID,ST017,Time_Band,invalid_or_inconsistent_time_band,Peak,
+energy_tariffs.csv,32,Station_ID,ST002,Time_Band,invalid_or_inconsistent_time_band,Peak,Peak 
+energy_tariffs.csv,298,Station_ID,ST013,Valid_From,invalid_or_missing_effective_date,2025-06-01,
+energy_tariffs.csv,121,Station_ID,ST006,Valid_From,invalid_or_missing_effective_date,2025-01-01,2025-02-30
+energy_tariffs.csv,141,Station_ID,ST006,Valid_From,invalid_or_missing_effective_date,2025-11-01,not_a_date
+energy_tariffs.csv,259,Station_ID,ST011,Valid_To,invalid_or_reversed_effective_date,2025-10-31,
+energy_tariffs.csv,238,Station_ID,ST010,Valid_To,invalid_or_reversed_effective_date,2025-12-31,2024-01-01
+energy_tariffs.csv,199,Station_ID,ST009,Valid_To,invalid_or_reversed_effective_date,2025-04-30,not_a_date
+energy_tariffs.csv,526,Station_ID,ST999,Station_ID,orphan_or_malformed_foreign_key,ST022,ST999
+energy_tariffs.csv,142,Station_ID,,Station_ID,orphan_or_malformed_foreign_key,ST006,
+energy_tariffs.csv,345,Station_ID,st002,Station_ID,orphan_or_malformed_foreign_key,ST015,st002
+energy_tariffs.csv,750,Tariff_ID,TR00021,*,exact_duplicate_row,source row index 20,duplicate of source row 20
+energy_tariffs.csv,751,Tariff_ID,TR00071,*,exact_duplicate_row,source row index 70,duplicate of source row 70
+energy_tariffs.csv,752,Tariff_ID,TR00141,*,exact_duplicate_row,source row index 140,duplicate of source row 140
+energy_tariffs.csv,753,Tariff_ID,TR00301,*,exact_duplicate_row,source row index 300,duplicate of source row 300
+energy_tariffs.csv,754,Tariff_ID,TR_OVERLAP_ST001,Valid_From/Valid_To,overlapping_tariff_effective_period,no overlapping row,2025-01-15 through 2025-02-15 overlaps ST001 Peak
+charger_status_events.csv,14232,Charger_ID,CH00166,Status,invalid_or_inconsistent_status,Online,BROKEN??
+charger_status_events.csv,12467,Charger_ID,CH00029,Status,invalid_or_inconsistent_status,Charging,offline 
+charger_status_events.csv,1588,Charger_ID,CH00090,Status,invalid_or_inconsistent_status,Offline,UNKNOWN
+charger_status_events.csv,16630,Charger_ID,CH00009,Status,invalid_or_inconsistent_status,Offline,
+charger_status_events.csv,13580,Charger_ID,CH00044,Status,invalid_or_inconsistent_status,Charging,faulty
+charger_status_events.csv,14054,Charger_ID,CH00113,Fault_Category,missing_or_invalid_fault_category,None,
+charger_status_events.csv,9383,Charger_ID,CH00040,Fault_Category,missing_or_invalid_fault_category,None,connector
+charger_status_events.csv,9449,Charger_ID,CH00123,Fault_Category,missing_or_invalid_fault_category,None,NA
+charger_status_events.csv,699,Charger_ID,CH00110,Fault_Category,missing_or_invalid_fault_category,None,invalid_fault
+charger_status_events.csv,10049,Charger_ID,CH00076,Event_Time,invalid_or_missing_timestamp,2025-11-29 09:10:00,
+charger_status_events.csv,16983,Charger_ID,CH00127,Event_Time,invalid_or_missing_timestamp,2025-09-19 15:30:00,2025-13-40 99:99:99
+charger_status_events.csv,14569,Charger_ID,CH00164,Event_Time,invalid_or_missing_timestamp,2025-03-23 09:06:00,not_a_timestamp
+charger_status_events.csv,9172,Charger_ID,CH00068,Event_Time,invalid_or_missing_timestamp,2025-02-21 02:24:00,2025-02-30 12:00:00
+charger_status_events.csv,5578,Charger_ID,CH00087,Event_Duration_Min,invalid_event_duration,314,-5
+charger_status_events.csv,17058,Charger_ID,CH00108,Event_Duration_Min,invalid_event_duration,9,0
+charger_status_events.csv,7361,Charger_ID,CH00041,Event_Duration_Min,invalid_event_duration,559,999999
+charger_status_events.csv,304,Charger_ID,CH00091,Event_Duration_Min,invalid_event_duration,489,
+charger_status_events.csv,12342,Charger_ID,CH99999,Charger_ID,orphan_or_malformed_foreign_key,CH00007,CH99999
+charger_status_events.csv,6419,Charger_ID,,Charger_ID,orphan_or_malformed_foreign_key,CH00061,
+charger_status_events.csv,13452,Charger_ID,ch00002,Charger_ID,orphan_or_malformed_foreign_key,CH00077,ch00002
+charger_status_events.csv,20000,Status_Event_ID,EV0000021,*,exact_duplicate_row,source row index 20,duplicate of source row 20
+charger_status_events.csv,20001,Status_Event_ID,EV0000101,*,exact_duplicate_row,source row index 100,duplicate of source row 100
+charger_status_events.csv,20002,Status_Event_ID,EV0000501,*,exact_duplicate_row,source row index 500,duplicate of source row 500
+charger_status_events.csv,20003,Status_Event_ID,EV0001001,*,exact_duplicate_row,source row index 1000,duplicate of source row 1000
+charger_status_events.csv,20004,Status_Event_ID,EV0004001,*,exact_duplicate_row,source row index 4000,duplicate of source row 4000
+maintenance_events.csv,4127,Charger_ID,CH00174,Cost,missing_invalid_or_outlier_cost,6229.09,
+maintenance_events.csv,2922,Charger_ID,CH00151,Cost,missing_invalid_or_outlier_cost,19884.15,-100
+maintenance_events.csv,1129,Charger_ID,CH00140,Cost,missing_invalid_or_outlier_cost,2898.28,not_numeric
+maintenance_events.csv,692,Charger_ID,CH00130,Cost,missing_invalid_or_outlier_cost,1854.46,99999999
+maintenance_events.csv,1344,Charger_ID,CH00024,Cost,missing_invalid_or_outlier_cost,17714.71,-0.5
+maintenance_events.csv,674,Charger_ID,CH00047,Maintenance_Type,invalid_or_inconsistent_category,Emergency,corrective
+maintenance_events.csv,445,Charger_ID,CH00019,Maintenance_Type,invalid_or_inconsistent_category,Emergency,EMERGENCY 
+maintenance_events.csv,2939,Charger_ID,CH00099,Maintenance_Type,invalid_or_inconsistent_category,Emergency,unknown
+maintenance_events.csv,4966,Charger_ID,CH00010,Maintenance_Type,invalid_or_inconsistent_category,Emergency,
+maintenance_events.csv,422,Charger_ID,CH00124,Start_Time,invalid_or_missing_timestamp,2025-09-23 18:25:00,
+maintenance_events.csv,4032,Charger_ID,CH00138,Start_Time,invalid_or_missing_timestamp,2025-08-10 17:29:00,2025-02-30 00:00:00
+maintenance_events.csv,3303,Charger_ID,CH00019,Start_Time,invalid_or_missing_timestamp,2025-10-13 13:42:00,not_a_timestamp
+maintenance_events.csv,1500,Charger_ID,CH00074,End_Time,invalid_or_reversed_timestamp,2025-03-12 22:57:00,
+maintenance_events.csv,3678,Charger_ID,CH00017,End_Time,invalid_or_reversed_timestamp,2025-09-01 12:48:00,2024-01-01 00:00:00
+maintenance_events.csv,1792,Charger_ID,CH00167,End_Time,invalid_or_reversed_timestamp,2025-09-12 08:18:00,not_a_timestamp
+maintenance_events.csv,1627,Charger_ID,CH00135,End_Time,invalid_or_reversed_timestamp,2025-12-11 22:26:00,2025-02-30 00:00:00
+maintenance_events.csv,1520,Charger_ID,CH99999,Charger_ID,orphan_or_malformed_foreign_key,CH00094,CH99999
+maintenance_events.csv,2484,Charger_ID,,Charger_ID,orphan_or_malformed_foreign_key,CH00097,
+maintenance_events.csv,480,Charger_ID,ch00003,Charger_ID,orphan_or_malformed_foreign_key,CH00162,ch00003
+maintenance_events.csv,5000,Maintenance_ID,MA000012,*,exact_duplicate_row,source row index 11,duplicate of source row 11
+maintenance_events.csv,5001,Maintenance_ID,MA000201,*,exact_duplicate_row,source row index 200,duplicate of source row 200
+maintenance_events.csv,5002,Maintenance_ID,MA000801,*,exact_duplicate_row,source row index 800,duplicate of source row 800
+energy_meter_readings.csv,8076,Station_ID,ST004,Energy_kWh,missing_invalid_or_outlier_meter_value,42086.504,
+energy_meter_readings.csv,3389,Station_ID,ST002,Energy_kWh,missing_invalid_or_outlier_meter_value,59256.098,-55
+energy_meter_readings.csv,29344,Station_ID,ST014,Energy_kWh,missing_invalid_or_outlier_meter_value,50720.396,not_numeric
+energy_meter_readings.csv,45290,Station_ID,ST021,Energy_kWh,missing_invalid_or_outlier_meter_value,91863.181,999999999
+energy_meter_readings.csv,44217,Station_ID,ST021,Energy_kWh,missing_invalid_or_outlier_meter_value,27569.099,-1
+energy_meter_readings.csv,34111,Station_ID,ST016,Meter_Status,invalid_or_inconsistent_meter_status,Warning,VALID
+energy_meter_readings.csv,4592,Station_ID,ST003,Meter_Status,invalid_or_inconsistent_meter_status,Warning,warning 
+energy_meter_readings.csv,55616,Station_ID,ST026,Meter_Status,invalid_or_inconsistent_meter_status,Valid,unknown
+energy_meter_readings.csv,21733,Station_ID,ST010,Meter_Status,invalid_or_inconsistent_meter_status,Estimated,
+energy_meter_readings.csv,50416,Station_ID,ST024,Reading_Time,invalid_or_missing_timestamp,2025-01-08 16:00:00,
+energy_meter_readings.csv,28180,Station_ID,ST013,Reading_Time,invalid_or_missing_timestamp,2025-11-13 16:00:00,2025-02-30 00:00:00
+energy_meter_readings.csv,27746,Station_ID,ST013,Reading_Time,invalid_or_missing_timestamp,2025-09-02 08:00:00,not_a_timestamp
+energy_meter_readings.csv,9893,Station_ID,ST005,Reading_Time,invalid_or_missing_timestamp,2025-07-08 20:00:00,2025-13-40 99:99:99
+energy_meter_readings.csv,7960,Station_ID,ST999,Station_ID,orphan_or_malformed_foreign_key,ST004,ST999
+energy_meter_readings.csv,24606,Station_ID,,Station_ID,orphan_or_malformed_foreign_key,ST012,
+energy_meter_readings.csv,15682,Station_ID,st001,Station_ID,orphan_or_malformed_foreign_key,ST008,st001
+energy_meter_readings.csv,65700,Meter_Reading_ID,MR00000011,*,exact_duplicate_row,source row index 10,duplicate of source row 10
+energy_meter_readings.csv,65701,Meter_Reading_ID,MR00000201,*,exact_duplicate_row,source row index 200,duplicate of source row 200
+energy_meter_readings.csv,65702,Meter_Reading_ID,MR00001001,*,exact_duplicate_row,source row index 1000,duplicate of source row 1000
+energy_meter_readings.csv,65703,Meter_Reading_ID,MR00005001,*,exact_duplicate_row,source row index 5000,duplicate of source row 5000
+energy_meter_readings.csv,65704,Meter_Reading_ID,MR00009001,*,exact_duplicate_row,source row index 9000,duplicate of source row 9000
+energy_meter_readings.csv,65705,Meter_Reading_ID,MR00030001,*,exact_duplicate_row,source row index 30000,duplicate of source row 30000
+calendar.csv,74,Date_Key,20250316,Weekday,invalid_derived_weekday,Sunday,Funday
+calendar.csv,228,Date_Key,20250817,Weekday,invalid_derived_weekday,Sunday,
+calendar.csv,122,Date_Key,20250503,Weekday,invalid_derived_weekday,Saturday,monday
+calendar.csv,165,Date_Key,20250615,Weekday,invalid_derived_weekday,Sunday,NotADay
+calendar.csv,164,Date_Key,20250614,Season,invalid_or_inconsistent_season,Summer,
+calendar.csv,15,Date_Key,20250116,Season,invalid_or_inconsistent_season,Winter,unknown
+calendar.csv,54,Date_Key,20250224,Season,invalid_or_inconsistent_season,Winter,MONSOON
+calendar.csv,84,Date_Key,20250326,Season,invalid_or_inconsistent_season,Spring,winter 
+calendar.csv,21,Date_Key,20250122,Month,invalid_month,1,0
+calendar.csv,205,Date_Key,20250725,Month,invalid_month,7,13
+calendar.csv,103,Date_Key,20250414,Month,invalid_month,4,
+calendar.csv,155,Date_Key,20250605,Date,invalid_or_missing_date,2025-06-05,2025-02-30
+calendar.csv,129,Date_Key,20250510,Date,invalid_or_missing_date,2025-05-10,not_a_date
+calendar.csv,36,Date_Key,20250206,Date,invalid_or_missing_date,2025-02-06,
+calendar.csv,365,Date_Key,20250121,*,duplicate_calendar_row,source row index 20,duplicate of source row 20
+calendar.csv,366,Date_Key,20250411,*,duplicate_calendar_row,source row index 100,duplicate of source row 100
+calendar.csv,367,Date_Key,20250720,*,duplicate_calendar_row,source row index 200,duplicate of source row 200
+stations.csv,22,Station_ID,ST023,Longitude,additional_missing_or_invalid_value,78.488557,
+stations.csv,27,Station_ID,ST028,Longitude,additional_missing_or_invalid_value,76.46951,999.999
+chargers.csv,65,Station_ID,ST011,Connector_Type,additional_missing_or_invalid_value,Bharat DC-001, 
+chargers.csv,94,Station_ID,ST016,Connector_Type,additional_missing_or_invalid_value,CCS2,NA
+charging_sessions.csv,3625,Charger_ID,CH00044,Revenue,additional_missing_or_invalid_value,242.23,
+charging_sessions.csv,12552,Charger_ID,CH00178,Revenue,additional_missing_or_invalid_value,150.31,-500
+energy_tariffs.csv,550,Station_ID,ST023,Rate_Per_kWh,additional_missing_or_invalid_value,8.36,
+energy_tariffs.csv,691,Station_ID,ST029,Rate_Per_kWh,additional_missing_or_invalid_value,5.71,-3.0
+charger_status_events.csv,13646,Charger_ID,CH00165,Fault_Category,additional_missing_or_invalid_value,None,
+charger_status_events.csv,9182,Charger_ID,CH00029,Fault_Category,additional_missing_or_invalid_value,None,unmapped_fault
+maintenance_events.csv,1622,Charger_ID,CH00084,Cost,additional_missing_or_invalid_value,4762.73,
+maintenance_events.csv,681,Charger_ID,CH00066,Cost,additional_missing_or_invalid_value,13708.09,-250
+energy_meter_readings.csv,14312,Station_ID,ST007,Energy_kWh,additional_missing_or_invalid_value,60344.658,
+energy_meter_readings.csv,31269,Station_ID,ST015,Energy_kWh,additional_missing_or_invalid_value,34874.968,-999
+calendar.csv,35,Date_Key,20250205,Season,additional_missing_or_invalid_value,Winter,
+calendar.csv,184,Date_Key,20250704,Season,additional_missing_or_invalid_value,Monsoon,unknown

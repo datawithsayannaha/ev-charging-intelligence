@@ -1,0 +1,162 @@
+{
+  "project": "EV Charging Network Intelligence & Decision Support Platform",
+  "dataset_version": "fresh-v3",
+  "dataset_type": "Synthetic intentionally messy raw data",
+  "generation_seed": 20261015,
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "row_counts": {
+    "stations": 30,
+    "chargers": 180,
+    "charging_sessions": 80010,
+    "energy_tariffs": 755,
+    "charger_status_events": 20005,
+    "maintenance_events": 5003,
+    "energy_meter_readings": 65706,
+    "calendar": 368
+  },
+  "automated_diagnostics": {
+    "stations": {
+      "rows": 30,
+      "columns": 9,
+      "blank_or_whitespace_cells": 5,
+      "exact_duplicate_rows": 0,
+      "column_names": [
+        "Station_ID",
+        "Station_Name",
+        "Region",
+        "Location_City",
+        "Latitude",
+        "Longitude",
+        "Station_Type",
+        "Installation_Date",
+        "Total_Capacity_kW"
+      ]
+    },
+    "chargers": {
+      "rows": 180,
+      "columns": 7,
+      "blank_or_whitespace_cells": 6,
+      "exact_duplicate_rows": 0,
+      "column_names": [
+        "Charger_ID",
+        "Station_ID",
+        "Charger_Type",
+        "Connector_Type",
+        "Rated_Power_kW",
+        "Installation_Date",
+        "Status"
+      ]
+    },
+    "charging_sessions": {
+      "rows": 80010,
+      "columns": 8,
+      "blank_or_whitespace_cells": 11,
+      "exact_duplicate_rows": 10,
+      "column_names": [
+        "Session_ID",
+        "Charger_ID",
+        "Start_Time",
+        "End_Time",
+        "Energy_kWh",
+        "Duration_Min",
+        "Revenue",
+        "Session_Status"
+      ]
+    },
+    "energy_tariffs": {
+      "rows": 755,
+      "columns": 7,
+      "blank_or_whitespace_cells": 6,
+      "exact_duplicate_rows": 4,
+      "column_names": [
+        "Tariff_ID",
+        "Station_ID",
+        "Valid_From",
+        "Valid_To",
+        "Time_Band",
+        "Tariff_Type",
+        "Rate_Per_kWh"
+      ]
+    },
+    "charger_status_events": {
+      "rows": 20005,
+      "columns": 6,
+      "blank_or_whitespace_cells": 6,
+      "exact_duplicate_rows": 5,
+      "column_names": [
+        "Status_Event_ID",
+        "Charger_ID",
+        "Event_Time",
+        "Status",
+        "Fault_Category",
+        "Event_Duration_Min"
+      ]
+    },
+    "maintenance_events": {
+      "rows": 5003,
+      "columns": 7,
+      "blank_or_whitespace_cells": 6,
+      "exact_duplicate_rows": 3,
+      "column_names": [
+        "Maintenance_ID",
+        "Charger_ID",
+        "Start_Time",
+        "End_Time",
+        "Maintenance_Type",
+        "Cost",
+        "Repair_Reason"
+      ]
+    },
+    "energy_meter_readings": {
+      "rows": 65706,
+      "columns": 5,
+      "blank_or_whitespace_cells": 5,
+      "exact_duplicate_rows": 6,
+      "column_names": [
+        "Meter_Reading_ID",
+        "Station_ID",
+        "Reading_Time",
+        "Energy_kWh",
+        "Meter_Status"
+      ]
+    },
+    "calendar": {
+      "rows": 368,
+      "columns": 9,
+      "blank_or_whitespace_cells": 5,
+      "exact_duplicate_rows": 3,
+      "column_names": [
+        "Date_Key",
+        "Date",
+        "Year",
+        "Quarter",
+        "Month",
+        "Month_Name",
+        "Weekday",
+        "Is_Weekend",
+        "Season"
+      ]
+    }
+  },
+  "foreign_key_violation_counts": {
+    "chargers.Station_ID->stations.Station_ID": 3,
+    "charging_sessions.Charger_ID->chargers.Charger_ID": 4,
+    "charger_status_events.Charger_ID->chargers.Charger_ID": 3,
+    "maintenance_events.Charger_ID->chargers.Charger_ID": 3,
+    "energy_meter_readings.Station_ID->stations.Station_ID": 3,
+    "energy_tariffs.Station_ID->stations.Station_ID": 3
+  },
+  "tariff_overlap_detected_count": 6,
+  "detected_issue_location_rows": 255,
+  "injected_defect_registry_rows": 208,
+  "limitations": [
+    "Synthetic data only; not real EV operator data.",
+    "Automated checks detect defined classes of issues; this is not proof that every possible data defect is detected.",
+    "Meter readings are cumulative register values; interval energy must be derived with reset/anomaly checks.",
+    "Raw files must be preserved and cleaning performed into separate outputs.",
+    "Tariff matching must use station, effective dates and time band; service-fee reference rows are excluded from energy-rate matching."
+  ]
+}
